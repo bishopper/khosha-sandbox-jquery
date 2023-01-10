@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./bootstrap/main.css" />
+    <link rel="stylesheet" href="../styles/pure-styles.css" />
+
+    <!-- title -->
+    <title>Khosha Sandbox</title>
+  </head>
+
+  <body class="">
+    <!-- contents -->
+    <!-- navbar -->
+    <nav
+      id="nav-container"
+      class="sticky-top navbar navbar-expand-lg d-flex justify-content-center"
+    >
+      <div class="d-flex flex-row align-items-center">
+        <a class="navbar-brand text-white" href="#"
+          >Khosha Internship Employees - Mohammad Behnam</a
+        >
+      </div>
+    </nav>
+    <!-- navbar -->
+    <div id="p"></div>
+    <!-- search bar -->
+    <div
+      class="container my-4 d-flex justify-content-center align-items-center"
+    >
+      <form class="d-flex w-50" role="search">
+        <input
+          id="search-input"
+          class="form-control me-2"
+          type="search"
+          placeholder="Search Employee With ID"
+          aria-label="Search"
+        />
+        <button id="search-submit" class="btn btn-outline-danger" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+    <!-- search bar -->
+
+    <!-- loading div -->
+    <div
+      id="loadingDiv"
+      class="spinner-grow"
+      style="width: 3rem; height: 3rem"
+      role="status"
+    >
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <!-- loading div -->
+
+    <!-- show employees Result Contents -->
+    <div id="results" class="container">
+      <table id="table" class="table text-white">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">employee name</th>
+            <th scope="col">employee salary</th>
+            <th scope="col">employee age</th>
+          </tr>
+        </thead>
+        <tbody id="full-result-tbody"></tbody>
+      </table>
+    </div>
+    <!-- show employees Result Contents -->
+
+    <!-- scripts -->
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/app.js"></script>
+    <script src="./bootstrap/main.js"></script>
+  </body>
+</html>

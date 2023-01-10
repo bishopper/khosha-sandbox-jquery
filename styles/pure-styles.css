@@ -1,0 +1,12 @@
+body {
+    background-color: #282a36;
+}
+
+#nav-container {
+    background-color: #282a36;
+    box-shadow: 5px 5px 5px #282a36;
+}
+
+#table {
+    background-color: #44475a;
+}
